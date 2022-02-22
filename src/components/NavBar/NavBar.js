@@ -1,5 +1,6 @@
 import React from "react";
 import '../../App.css';
+import {Link} from 'react-router-dom';
 // import logo from '../assets/badge.png';
 const NavBar = () => {
     return(
@@ -13,19 +14,19 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="nav justify-content-end">
                 <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                <a className="nav-link active"><Link to="/home">Home</Link></a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">About Me</a>
+                <a className="nav-link"><Link to="/about">About Me</Link></a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">Experience</a>
+                <a className="nav-link"><Link to="/experience">Experience</Link></a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">Portfolio</a>
+                <a className="nav-link"><Link to="/portfolio">Portfolio</Link></a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
+                <a className="nav-link"><Link to="/contact">Contact</Link></a>
                 </li>
       </ul>
     </div>
